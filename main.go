@@ -1,10 +1,7 @@
 package main
 
 import (
-	// "bufio"
 	"fmt"
-	// "os"
-	// "strings"
 )
 
 func menu() {
@@ -21,12 +18,11 @@ func menu() {
 
 func main() {
 	var num1, num2, resposta int
-	//soma e subtracao tem que ir para depois de obter as entradas
 
 	fmt.Println("Bem-vindo(a) a calculadora!")
 
 	fmt.Println("Digite o valor do primeiro número: ")
-	fmt.Scanln(&num1) // aqui deveria ser num1
+	fmt.Scanln(&num1)
 
 	fmt.Println("Digite o valor do segundo número: ")
 	fmt.Scanln(&num2)
@@ -38,8 +34,8 @@ func main() {
 		var soma int = num1 + num2	
 		fmt.Println(soma)
 	case 2:
-			var subtracao int = num1 - num2
-			fmt.Println(subtracao)
+		var subtracao int = num1 - num2
+		fmt.Println(subtracao)
 	case 3:
 		var multiplicacao int = num1 * num2 
 		fmt.Println(multiplicacao)
